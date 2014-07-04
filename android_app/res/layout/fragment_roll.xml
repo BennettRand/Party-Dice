@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/roller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Roll" />
+
+    <EditText
+        android:id="@+id/diceKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/roller"
+        android:layout_centerHorizontal="true"
+        android:ems="3"
+        android:inputType="number"
+        android:text="20" />
+
+    <TextView
+        android:id="@+id/dee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/diceKind"
+        android:layout_alignBottom="@+id/diceKind"
+        android:layout_toLeftOf="@+id/diceKind"
+        android:text="D"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/numDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dee"
+        android:layout_alignBottom="@+id/dee"
+        android:layout_toLeftOf="@+id/dee"
+        android:ems="2"
+        android:inputType="number"
+        android:text="1" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/plusminus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/diceKind"
+        android:layout_alignBottom="@+id/diceKind"
+        android:layout_toRightOf="@+id/diceKind"
+        android:text="±"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plusminus"
+        android:layout_alignBottom="@+id/plusminus"
+        android:layout_toRightOf="@+id/plusminus"
+        android:ems="3"
+        android:inputType="numberSigned"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100dp" />
+
+</RelativeLayout>

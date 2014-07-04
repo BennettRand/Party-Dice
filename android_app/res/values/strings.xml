@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Party Dice</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="navigation_drawer_items_array">
+        <item>Roll</item>
+        <item>Me</item>
+        <item>Group</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="prefs_name">party_dice_prefs</string>
+
+</resources>
